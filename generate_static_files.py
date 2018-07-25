@@ -77,7 +77,7 @@ def convert_to_files(names, to_format):
 # In[ ]:
 
 
-convert_to_files(file_names, "html")
+convert_to_files(file_names, "markdown")
 
 
 # 产生新目录：
@@ -87,6 +87,6 @@ convert_to_files(file_names, "html")
 
 with open('index.md') as f:
     text = f.read()
-    with open(os.path.join("static-files", "html", "README.md"), "w") as g:
-        g.write(text.replace(".ipynb", ".html"))
+    with open(os.path.join("static-files", "markdown", "README.md"), "w") as g:
+        g.write(text.replace(".ipynb", ".md"))
 
